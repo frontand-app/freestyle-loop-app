@@ -33,15 +33,15 @@ export const workflows: Record<string, WorkflowConfig> = {
     
     templates: [
       {
-        id: 'lead-scoring',
-        title: 'Lead Scoring',
-        description: 'Score and analyze sales leads',
-        prompt: 'Analyze each lead and provide: Lead Score (1-10), Company Size, Industry, and Likelihood to convert (High/Medium/Low).',
+        id: 'lead-enrichment',
+        title: 'Lead Enrichment',
+        description: 'Enrich and score sales leads with detailed company information',
+        prompt: 'Enrich each lead with comprehensive information. Provide: Lead Score (1-10), Company Size (Startup/SMB/Mid-Market/Enterprise), Industry Category, Annual Revenue Estimate, Employee Count Range, Technology Stack, Decision Maker Level, and Conversion Likelihood (High/Medium/Low).',
         sampleData: {
-          csv_data: `Name,Email,Company,Website
-John Smith,john@techcorp.com,TechCorp Inc,techcorp.com
-Sarah Johnson,sarah@innovate.io,Innovate Solutions,innovate.io
-Mike Chen,mike@startupxyz.com,StartupXYZ,startupxyz.com`
+          csv_data: `Name,Email,Company,Website,Title
+John Smith,john@techcorp.com,TechCorp Inc,techcorp.com,VP Sales
+Sarah Johnson,sarah@innovate.io,Innovate Solutions,innovate.io,CEO
+Mike Chen,mike@startupxyz.com,StartupXYZ,startupxyz.com,CTO`
         }
       },
       {
