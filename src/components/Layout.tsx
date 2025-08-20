@@ -22,15 +22,12 @@ const Layout = ({ children }: LayoutProps) => {
   const location = useLocation();
   const { user, signOut } = useAuth();
 
-  // V1 Navigation - core workflows
+  // Freestyle Loop Navigation - simplified
   const navigation = [
-  { name: "Home", href: "/" },
-  { name: "Search", href: "/search" },
-      { name: "Loop Over Rows", href: "/search/loop-over-rows" },
-    { name: "Crawl4Imprint", href: "/search/crawl4imprint" },
-  { name: "Executions", href: "/executions" },
-  { name: "Developer", href: "/developer" },
-];
+    { name: "Home", href: "/" },
+    { name: "Data Processing", href: "/search/loop-over-rows" },
+    { name: "Executions", href: "/executions" },
+  ];
 
   const isActive = (path: string) => location.pathname === path;
 
