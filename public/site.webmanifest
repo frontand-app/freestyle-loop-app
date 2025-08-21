@@ -1,7 +1,7 @@
 {
-  "name": "Front& - AI Workflow Automation Platform",
-  "short_name": "Front&",
-  "description": "Transform your data processing with AI-powered workflows",
+  "name": "Freestyle Loop - AI CSV Data Processing",
+  "short_name": "Freestyle Loop",
+  "description": "Process CSV data with AI-powered analysis",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

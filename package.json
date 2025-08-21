@@ -1,8 +1,8 @@
 {
-  "name": "frontand-frontend",
+  "name": "freestyle-loop-app",
   "private": true,
-  "version": "0.0.0",
-  "description": "Frontend application for Front& workflow automation platform",
+  "version": "1.0.0",
+  "description": "AI-powered CSV data processing application",
   "type": "module",
   "scripts": {
     "dev": "vite",

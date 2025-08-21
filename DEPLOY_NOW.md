@@ -1,1 +1,0 @@
-# Front& Deployment Ready!

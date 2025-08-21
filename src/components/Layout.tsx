@@ -22,11 +22,10 @@ const Layout = ({ children }: LayoutProps) => {
   const location = useLocation();
   const { user, signOut } = useAuth();
 
-  // Freestyle Loop Navigation - simplified
+  // Simple navigation
   const navigation = [
     { name: "Home", href: "/" },
-    { name: "Data Processing", href: "/search/loop-over-rows" },
-    { name: "Executions", href: "/executions" },
+    { name: "Data Processing", href: "/workflow/loop-over-rows" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -45,7 +44,7 @@ const Layout = ({ children }: LayoutProps) => {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <Link to="/" className="flex items-center">
-              <img src="/Front&_Logo.svg" alt="Front&" className="h-8" />
+                              <div className="text-xl font-bold text-foreground">Freestyle Loop</div>
             </Link>
 
             {/* Desktop Navigation */}
@@ -204,15 +203,15 @@ const Layout = ({ children }: LayoutProps) => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex items-center space-x-4">
               <Link to="/" className="flex items-center">
-                <img src="/Front&_Logo.svg" alt="Front&" className="h-6" />
+                <div className="text-lg font-bold text-foreground">Freestyle Loop</div>
               </Link>
             </div>
             
             <div className="flex items-center space-x-6 text-sm text-muted-foreground">
-              <a href="https://github.com/frontand-app/frontand-platform" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
+              <a href="https://github.com/frontand-app/freestyle-loop-app" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
                 GitHub
               </a>
-              <span className="sr-only">© 2025 Front&</span>
+              <span className="sr-only">© 2025 Freestyle Loop</span>
             </div>
           </div>
         </div>
