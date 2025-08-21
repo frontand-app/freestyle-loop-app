@@ -20,27 +20,10 @@ const WorkflowRedirect = () => {
 // Universal workflow runner - handles all workflows via the registry
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <AuthProvider>
-          <Layout>
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/workflow/:id" element={<WorkflowRunner />} />
-              {/* Legacy redirects to maintain compatibility */}
-              <Route path="/flows/:id" element={<WorkflowRedirect />} />
-              <Route path="/search/:id" element={<WorkflowRedirect />} />
-              <Route path="/workflows/:id" element={<WorkflowRedirect />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </Layout>
-        </AuthProvider>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+  <div>
+    <h1>Test App</h1>
+    <p>If you can see this, React is working!</p>
+  </div>
 );
 
 export default App;
